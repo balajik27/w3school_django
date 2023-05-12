@@ -1,3 +1,4 @@
+import http
 from http.client import HTTPResponse
 from django.shortcuts import render
 
@@ -10,3 +11,9 @@ def index(request):
 
 def home():
     return HTTPResponse("hello world")
+
+def about():
+    return HTTPResponse("about page")
+
+def login():
+    return HTTPResponse("login")
